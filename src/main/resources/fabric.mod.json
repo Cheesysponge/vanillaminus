@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "vanillaminus",
+  "version": "${version}",
+  "name": "vanillaminus",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Samik/vanillaminus"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/vanillaminus/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "name.vanillaminus.vanillaminus.client.vanillaminusClient"
+    ],
+    "main": [
+      "name.vanillaminus.vanillaMinus"
+    ]
+  },
+  "mixins": [
+    "vanillaminus.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

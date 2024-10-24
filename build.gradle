@@ -1,0 +1,122 @@
+plugins {
+    id 'fabric-loom' version '1.7-SNAPSHOT'
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+
+    // Shedaniel's Maven for REI
+    maven {
+        url "https://maven.shedaniel.me/"
+        content {
+            includeGroup "me.shedaniel"
+            includeGroup "me.shedaniel.cloth"
+            includeGroup "dev.architectury"
+        }
+    }
+
+    // ModMaven for JEI
+    maven {
+        name 'modmaven'
+        url "https://modmaven.dev/"
+        content {
+            includeGroup "mezz.jei"
+        }
+    }
+
+    // You can add additional repositories if needed for other dependencies.
+}
+
+dependencies {
+    // Minecraft and Fabric Loader
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+    // Fabric API
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    // REI (Roughly Enough Items) API and default plugin if using REI
+    modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:${project.rei_version}"
+    modCompileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:${project.rei_version}"
+
+    // Conditional dependencies for JEI or REI
+    if (project.runtime_itemlist_mod == "jei") {
+        modImplementation "mezz.jei:jei-${project.jei_minecraft_version}-fabric:${project.jei_version}"
+    } else if (project.runtime_itemlist_mod == "rei") {
+        modImplementation "me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}"
+
+        // Optional: Overriding architectury dependency due to REI
+        modImplementation "dev.architectury:architectury-fabric:${project.architectury_version}"
+    } else {
+        throw new GradleException("Invalid runtime_itemlist_mod value: " + project.runtime_itemlist_mod)
+    }
+
+
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "minecraft_version", project.minecraft_version
+    inputs.property "loader_version", project.loader_version
+    filteringCharset "UTF-8"
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version,
+                "minecraft_version": project.minecraft_version,
+                "loader_version": project.loader_version
+    }
+}
+
+def targetJavaVersion = 17
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+    options.release.set(targetJavaVersion)
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+def dataOutput = 'src/main/generated'
+loom {
+    runs {
+        datagen {
+            server()
+            name "Data Generation"
+            vmArg "-Dfabric-api.datagen"
+            vmArg "-Dfabric-api.datagen.output-dir=${file(dataOutput)}"
+            runDir "build/datagen"
+        }
+    }
+}
+sourceSets { main { resources { srcDirs += dataOutput } } }
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    options.deprecation = false
+    options.compilerArgs << "-Xmaxerrs" << "9999"
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = project.maven_group
+            artifactId = project.archives_base_name
+            version = project.mod_version
+
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url = uri("file://${project.buildDir}/maven-repo")
+        }
+    }
+}
