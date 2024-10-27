@@ -4,8 +4,12 @@
   "package": "name.vanillaminus.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "PlayerScreenHandlerAccessor",
+    "PlayerScreenHandlerMixin",
+    "SlotCommon"
   ],
   "client": [
+    "RecipeBookDisabler"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,4 +1,10 @@
 package name.vanillaminus.client;
 
-public class VanillaMinusClient {
+import net.fabricmc.api.ClientModInitializer;
+
+public class VanillaMinusClient implements ClientModInitializer {
+    @Override
+    public void onInitializeClient() {
+
+    }
 }
