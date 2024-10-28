@@ -17,7 +17,9 @@
     ],
     "main": [
       "name.vanillaminus.vanillaMinus"
-    ]
+    ],
+    "fabric-datagen": ["name.vanillaminus.datagen.ModDataGeneration"]
+
   },
   "mixins": [
     "vanillaminus.mixins.json"

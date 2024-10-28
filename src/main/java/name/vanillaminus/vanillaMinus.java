@@ -1,6 +1,13 @@
 package name.vanillaminus;
 
+import name.vanillaminus.block.ModBlocks;
+import name.vanillaminus.screen.ModScreenHandlers;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
+import net.minecraft.recipe.RecipeManager;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.Identifier;
+import net.minecraft.world.World;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongepowered.asm.launch.MixinBootstrap;
@@ -13,5 +20,12 @@ public class vanillaMinus implements ModInitializer {
     public void onInitialize() {
         MixinBootstrap.init();
         Mixins.addConfiguration("vanillaminus.mixins.json");
+        ModBlocks.registerModBlocks();
+        ModScreenHandlers.registerAllScreenHandlers();
+
+
+
     }
+
+
 }
