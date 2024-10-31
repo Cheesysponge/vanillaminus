@@ -27,9 +27,8 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-
         addDrop(ModBlocks.DIRT_CRAFTER);
+        addDrop(ModBlocks.DIRT_CLUMP);
         addDrop(ModBlocks.SILT, dropsWithSilkTouch(ModBlocks.SILT, this.applyExplosionDecay(ModBlocks.SILT, ItemEntry.builder(Items.IRON_NUGGET).apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(-3.0F, 2.0F))).apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE)))));
-
     }
 }

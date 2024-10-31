@@ -4,10 +4,7 @@ import name.vanillaminus.block.custom.DirtCrafterBlock;
 import name.vanillaminus.vanillaMinus;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.CraftingTableBlock;
-import net.minecraft.block.GlowLichenBlock;
+import net.minecraft.block.*;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -30,7 +27,7 @@ public class ModBlocks {
             new GlowLichenBlock(FabricBlockSettings.copyOf(Blocks.GLOW_LICHEN).strength(0.25f).luminance(0)));
 
     public static final Block DIRT_CLUMP = registerBlock("dirt_clump",
-            new GlowLichenBlock(FabricBlockSettings.copyOf(Blocks.GLOW_LICHEN).strength(0.25f).luminance(0)));
+            new CarpetBlock(FabricBlockSettings.copyOf(Blocks.GLOW_LICHEN).strength(0.25f).luminance(0)));
 
     private static Item registerBlockItem(String name, Block block, String tooltipKey) {
         return Registry.register(Registries.ITEM, new Identifier(vanillaMinus.MOD_ID, name),
