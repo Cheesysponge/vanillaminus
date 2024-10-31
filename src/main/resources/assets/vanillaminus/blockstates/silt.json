@@ -1,0 +1,382 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": [
+        {
+          "model": "vanillaminus:block/silt2",
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt0",
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt1",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "when": {
+        "down": "false",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      },
+      "apply": [
+        {
+          "model": "vanillaminus:block/silt1",
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt2"
+        },
+        {
+          "model": "vanillaminus:block/silt0"
+        },
+        {
+          "model": "vanillaminus:block/silt3"
+        }
+      ]
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": [
+        {
+          "model": "vanillaminus:block/silt2",
+          "y": 90,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt0",
+          "y": 90,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt1",
+          "y": 90,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt3",
+          "y": 90,
+          "uvlock": true,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "when": {
+        "down": "false",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      },
+      "apply": [
+        {
+          "model": "vanillaminus:block/silt1",
+          "y": 90,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt0",
+          "y": 90,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt2",
+          "y": 90,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt3",
+          "y": 90,
+          "uvlock": true,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": [
+        {
+          "model": "vanillaminus:block/silt0",
+          "y": 180,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt1",
+          "y": 180,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt2",
+          "y": 180,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt3",
+          "y": 180,
+          "uvlock": true,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "when": {
+        "down": "false",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      },
+      "apply": [
+        {
+          "model": "vanillaminus:block/silt0",
+          "y": 180,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt1",
+          "y": 180,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt2",
+          "y": 180,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt3",
+          "y": 180,
+          "uvlock": true,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": [
+        {
+          "model": "vanillaminus:block/silt1",
+          "y": 270,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt0",
+          "y": 270,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt2",
+          "y": 270,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt3",
+          "y": 270,
+          "uvlock": true,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "when": {
+        "down": "false",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      },
+      "apply": [
+        {
+          "model": "vanillaminus:block/silt0",
+          "y": 270,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt1",
+          "y": 270,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt2",
+          "y": 270,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt3",
+          "y": 270,
+          "uvlock": true,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "when": {
+        "up": "true"
+      },
+      "apply": [
+        {
+          "model": "vanillaminus:block/silt2",
+          "x": 270,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt1",
+          "x": 270,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt0",
+          "x": 270,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt3",
+          "x": 270,
+          "uvlock": true,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "when": {
+        "down": "false",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      },
+      "apply": [
+        {
+          "model": "vanillaminus:block/silt1",
+          "x": 270,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt2",
+          "x": 270,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt0",
+          "x": 270,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt3",
+          "x": 270,
+          "uvlock": true,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "when": {
+        "down": "true"
+      },
+      "apply": [
+        {
+          "model": "vanillaminus:block/silt0",
+          "x": 90,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt1",
+          "x": 90,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt2",
+          "x": 90,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt3",
+          "x": 90,
+          "uvlock": true,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "when": {
+        "down": "false",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      },
+      "apply": [
+        {
+          "model": "vanillaminus:block/silt1",
+          "x": 90,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt0",
+          "x": 90,
+          "uvlock": true,
+          "weight": 1
+        },
+        {
+          "model": "vanillaminus:block/silt2",
+          "x": 90,
+          "uvlock": true
+        },
+        {
+          "model": "vanillaminus:block/silt3",
+          "x": 90,
+          "uvlock": true,
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

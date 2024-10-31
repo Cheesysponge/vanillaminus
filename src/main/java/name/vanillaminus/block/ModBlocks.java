@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.CraftingTableBlock;
+import net.minecraft.block.GlowLichenBlock;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -23,7 +24,13 @@ import java.util.List;
 
 public class ModBlocks {
     public static final Block DIRT_CRAFTER = registerBlock("dirt_crafter",
-            new DirtCrafterBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).strength(6f).requiresTool()));
+            new DirtCrafterBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).strength(1f)));
+
+    public static final Block SILT = registerBlock("silt",
+            new GlowLichenBlock(FabricBlockSettings.copyOf(Blocks.GLOW_LICHEN).strength(0.25f).luminance(0)));
+
+    public static final Block DIRT_CLUMP = registerBlock("dirt_clump",
+            new GlowLichenBlock(FabricBlockSettings.copyOf(Blocks.GLOW_LICHEN).strength(0.25f).luminance(0)));
 
     private static Item registerBlockItem(String name, Block block, String tooltipKey) {
         return Registry.register(Registries.ITEM, new Identifier(vanillaMinus.MOD_ID, name),

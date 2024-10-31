@@ -15,6 +15,10 @@ public class VanillaMinusClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DIRT_CRAFTER, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DIRT_CRAFTER, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SILT, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SILT, RenderLayer.getTranslucent());
+
 
 
         ScreenRegistry.register(ModScreenHandlers.DIRT_CRAFTER_SCREEN_HANDLER, DirtCrafterScreen::new);

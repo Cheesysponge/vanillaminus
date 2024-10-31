@@ -48,7 +48,7 @@ public abstract class PlayerScreenHandlerMixin extends ScreenHandler {
 
     @Unique
     private PlayerEntity owner;
-    protected PlayerScreenHandlerMixin(@Nullable ScreenHandlerType<?> type, int syncId, boolean onServer, RecipeInputInventory craftingInput, PlayerEntity owner) {
+    public PlayerScreenHandlerMixin(@Nullable ScreenHandlerType<?> type, int syncId, boolean onServer, RecipeInputInventory craftingInput, PlayerEntity owner) {
         super(type, syncId);
         this.craftingInput = craftingInput;
         this.owner = owner;
@@ -63,13 +63,8 @@ public abstract class PlayerScreenHandlerMixin extends ScreenHandler {
 //        }
     }
 
-    @Unique
-    private static void onEquipStack(PlayerEntity player, EquipmentSlot slot, ItemStack newStack, ItemStack currentStack) {
-        Equipment equipment = Equipment.fromStack(newStack);
-        if (equipment != null) {
-            player.onEquipStack(slot, currentStack, newStack);
-        }
-    }
+
+
 
 
 }

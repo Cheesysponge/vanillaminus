@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "tag": "minecraft:planks"
+    },
+    "E": {
+      "item": "minecraft:iron_ingot"
+    },
+    "D": {
+      "item": "vanillaminus:dirt_crafter"
+    }
+  },
+  "pattern": [
+    "EO",
+    "OD"
+  ],
+  "result": {
+    "item": "minecraft:crafting_table"
+  },
+  "show_notification": false
+}

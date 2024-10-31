@@ -40,7 +40,7 @@ public class DirtCrafterScreen extends HandledScreen<DirtCrafterScreenHandler>
         this.addSelectableChild(this.recipeBook);
         this.setInitialFocus(this.recipeBook);
         this.titleX = 43;
-        this.titleY = this.titleY+18;
+        this.titleY = 25;
     }
 
     @Override
