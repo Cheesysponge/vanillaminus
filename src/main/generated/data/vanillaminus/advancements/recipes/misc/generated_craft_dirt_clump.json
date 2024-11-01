@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dirt_clump": {
+    "has_dirt": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vanillaminus:dirt_clump"
+              "minecraft:dirt"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:generated_craft_dirt_crafter"
+        "recipe": "minecraft:generated_craft_dirt_clump"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_dirt_clump",
+      "has_dirt",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:generated_craft_dirt_crafter"
+      "minecraft:generated_craft_dirt_clump"
     ]
   },
   "sends_telemetry_event": false

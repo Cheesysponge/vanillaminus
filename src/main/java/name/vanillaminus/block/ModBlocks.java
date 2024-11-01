@@ -1,5 +1,6 @@
 package name.vanillaminus.block;
 
+import name.vanillaminus.block.custom.DirtClumpBlock;
 import name.vanillaminus.block.custom.DirtCrafterBlock;
 import name.vanillaminus.vanillaMinus;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -27,7 +28,7 @@ public class ModBlocks {
             new GlowLichenBlock(FabricBlockSettings.copyOf(Blocks.GLOW_LICHEN).strength(0.25f).luminance(0)));
 
     public static final Block DIRT_CLUMP = registerBlock("dirt_clump",
-            new CarpetBlock(FabricBlockSettings.copyOf(Blocks.GLOW_LICHEN).strength(0.25f).luminance(0)));
+            new DirtClumpBlock(FabricBlockSettings.copyOf(Blocks.GLOW_LICHEN).strength(0.25f).luminance(0)));
 
     private static Item registerBlockItem(String name, Block block, String tooltipKey) {
         return Registry.register(Registries.ITEM, new Identifier(vanillaMinus.MOD_ID, name),

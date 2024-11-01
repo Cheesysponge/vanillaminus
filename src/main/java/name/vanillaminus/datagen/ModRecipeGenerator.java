@@ -20,8 +20,10 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
-        ShapelessRecipeGenerator(Items.DIRT,Item.fromBlock(ModBlocks.DIRT_CRAFTER), exporter);
+        ShapelessRecipeGenerator(Items.DIRT,Item.fromBlock(ModBlocks.DIRT_CLUMP), exporter);
+        ShapelessRecipeGenerator(Item.fromBlock(ModBlocks.DIRT_CLUMP),Item.fromBlock(ModBlocks.DIRT_CRAFTER), exporter);
         ShapelessRecipeGenerator(Items.GRAVEL, Item.fromBlock(ModBlocks.SILT), exporter, 3);
+
     }
 
 

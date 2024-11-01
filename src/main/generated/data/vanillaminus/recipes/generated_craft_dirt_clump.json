@@ -3,11 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:gravel"
+      "item": "minecraft:dirt"
     }
   ],
   "result": {
-    "count": 3,
-    "item": "vanillaminus:silt"
+    "item": "vanillaminus:dirt_clump"
   }
 }

@@ -42,6 +42,8 @@ public class DirtCrafterBlock extends Block {
         return ActionResult.CONSUME;
     }
 
+
+
     @Override
     public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
         return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new DirtCrafterScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, pos)), TITLE);
