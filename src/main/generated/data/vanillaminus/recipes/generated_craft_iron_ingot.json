@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vanillaminus:iron_chunk"
+    },
+    {
+      "item": "vanillaminus:iron_chunk"
+    },
+    {
+      "item": "vanillaminus:iron_chunk"
+    }
+  ],
+  "result": {
+    "item": "minecraft:iron_ingot"
+  }
+}

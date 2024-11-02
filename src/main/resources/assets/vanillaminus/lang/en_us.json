@@ -1,5 +1,7 @@
 {
   "block.vanillaminus.dirt_crafter": "Dirt Crafting Table",
   "block.vanillaminus.silt": "Silt",
-  "block.vanillaminus.dirt_clump": "Dirt Clump"
+  "block.vanillaminus.dirt_clump": "Dirt Clump",
+  "block.vanillaminus.iron_chunk": "Iron Chunk"
+
 }

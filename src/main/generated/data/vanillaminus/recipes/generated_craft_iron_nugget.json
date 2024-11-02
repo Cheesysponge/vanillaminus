@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vanillaminus:iron_chunk"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "minecraft:iron_nugget"
+  }
+}

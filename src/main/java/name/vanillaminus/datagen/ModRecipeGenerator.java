@@ -23,6 +23,9 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeGenerator(Items.DIRT,Item.fromBlock(ModBlocks.DIRT_CLUMP), exporter);
         ShapelessRecipeGenerator(Item.fromBlock(ModBlocks.DIRT_CLUMP),Item.fromBlock(ModBlocks.DIRT_CRAFTER), exporter);
         ShapelessRecipeGenerator(Items.GRAVEL, Item.fromBlock(ModBlocks.SILT), exporter, 3);
+        ShapelessRecipeGenerator( 3,Items.IRON_NUGGET, Item.fromBlock(ModBlocks.IRON_CHUNK), exporter);
+        ShapelessRecipeGenerator( 3, Item.fromBlock(ModBlocks.IRON_CHUNK),Items.IRON_INGOT , exporter);
+        ShapelessRecipeGenerator( Item.fromBlock(ModBlocks.IRON_CHUNK),Items.IRON_NUGGET , exporter,3);
 
     }
 
@@ -34,9 +37,16 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(item))
                 .offerTo(exporter, new Identifier("generated_craft_" + FabricRecipeProvider.getRecipeName(output)));
     }
-    public void ShapelessRecipeGenerator(Item item, Item output, Consumer<RecipeJsonProvider> exporter, int n) {
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, output, n)
+    public void ShapelessRecipeGenerator(Item item, Item output, Consumer<RecipeJsonProvider> exporter, int outputCount) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, output, outputCount)
                 .input(item)
+                .criterion(FabricRecipeProvider.hasItem(item),
+                        FabricRecipeProvider.conditionsFromItem(item))
+                .offerTo(exporter, new Identifier("generated_craft_" + FabricRecipeProvider.getRecipeName(output)));
+    }
+    public void ShapelessRecipeGenerator(int inputCount, Item item, Item output, Consumer<RecipeJsonProvider> exporter) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, output, 1)
+                .input(item, inputCount)
                 .criterion(FabricRecipeProvider.hasItem(item),
                         FabricRecipeProvider.conditionsFromItem(item))
                 .offerTo(exporter, new Identifier("generated_craft_" + FabricRecipeProvider.getRecipeName(output)));
