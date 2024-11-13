@@ -1,6 +1,9 @@
 package name.vanillaminus;
 
 import name.vanillaminus.block.ModBlocks;
+import name.vanillaminus.effect.ModEffects;
+import name.vanillaminus.item.ModItemGroup;
+import name.vanillaminus.potion.ModPotions;
 import name.vanillaminus.screen.ModScreenHandlers;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
@@ -18,14 +21,13 @@ public class vanillaMinus implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("vanillaminus");
     @Override
     public void onInitialize() {
-        MixinBootstrap.init();
-        Mixins.addConfiguration("vanillaminus.mixins.json");
+        ModEffects.registerEffects();
+
         ModBlocks.registerModBlocks();
         ModScreenHandlers.registerAllScreenHandlers();
-
-
-
+        ModItemGroup.registerItemGroups();
+        ModPotions.registerPotions();
+        MixinBootstrap.init();
+        Mixins.addConfiguration("vanillaminus.mixins.json");
     }
-
-
 }

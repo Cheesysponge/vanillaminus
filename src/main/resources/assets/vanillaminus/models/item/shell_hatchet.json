@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "vanillaminus:item/shell_hatchet"
+  }
+}

@@ -4,6 +4,7 @@
   "package": "name.vanillaminus.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "BrewingRecipeRegistryMixin",
     "PlayerScreenHandlerAccessor",
     "PlayerScreenHandlerMixin",
     "SlotCommon"

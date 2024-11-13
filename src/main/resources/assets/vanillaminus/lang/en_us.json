@@ -2,6 +2,15 @@
   "block.vanillaminus.dirt_crafter": "Dirt Crafting Table",
   "block.vanillaminus.silt": "Silt",
   "block.vanillaminus.dirt_clump": "Dirt Clump",
-  "block.vanillaminus.iron_chunk": "Iron Chunk"
+  "block.vanillaminus.iron_chunk": "Iron Chunk",
 
+  "itemGroup.vanillaminus.vanilla_minus": "Vanilla Deconstructed",
+  "item.vanillaminus.shell": "Sea Shell",
+  "item.vanillaminus.shell_hatchet": "Shell Hatchet",
+
+
+  "item.minecraft.potion.effect.shell_potion": "Shell Potion",
+  "item.minecraft.splash_potion.effect.shell_potion": "Splash Potion of Shell",
+  "item.minecraft.lingering_potion.effect.shell_potion": "Lingering Potion of Shell",
+  "effect.vanillaminus.shell": "Shell"
 }
