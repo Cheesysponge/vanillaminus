@@ -7,9 +7,9 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
-public class IronChunkBlock extends Block {
+public class ChunkBlock extends Block {
 
-    public IronChunkBlock(Settings settings) {
+    public ChunkBlock(Settings settings) {
         super(settings);
     }
 

@@ -1,5 +1,6 @@
-// 1.20.1	2024-11-12T13:16:17.7677661	vanillaminus/Block Loot Tables
+// 1.20.1	2024-11-14T11:23:39.79867	vanillaminus/Block Loot Tables
 53e8c0bb116a593af49fd04403e66856ee6427d2 data\vanillaminus\loot_tables\blocks\silt.json
+db9bc7878243a4fd5473c06e61f91c3af3ec9e20 data\vanillaminus\loot_tables\blocks\sand_chunk.json
 f31fa8b8af438dd41c919b4417fad709a618da7c data\vanillaminus\loot_tables\blocks\dirt_crafter.json
 c019bdf1e4320d40ebb7e0e79e0b281dd1c2096e data\vanillaminus\loot_tables\blocks\dirt_clump.json
 ffdd5ca07a9126f147999c5056733a4c0834f76e data\vanillaminus\loot_tables\blocks\iron_chunk.json

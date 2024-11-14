@@ -28,9 +28,13 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeGenerator(Item.fromBlock(ModBlocks.DIRT_CLUMP),Item.fromBlock(ModBlocks.DIRT_CRAFTER), exporter);
         ShapelessRecipeGenerator(Items.GRAVEL, Item.fromBlock(ModBlocks.SILT), exporter, 3);
         ShapelessRecipeGenerator( 3,Items.IRON_NUGGET, Item.fromBlock(ModBlocks.IRON_CHUNK), exporter);
+        ShapelessRecipeGenerator( 3,Items.SANDSTONE, Item.fromBlock(ModBlocks.SAND_CHUNK), exporter);
+        ShapelessRecipeGenerator( Item.fromBlock(ModBlocks.SAND_CHUNK),Items.SANDSTONE , exporter,3);
         ShapelessRecipeGenerator( 3, Item.fromBlock(ModBlocks.IRON_CHUNK),Items.IRON_INGOT , exporter);
         ShapelessRecipeGenerator( Item.fromBlock(ModBlocks.IRON_CHUNK),Items.IRON_NUGGET , exporter,3);
         TwoVerticalRecipeGenerator(Items.STICK,ModItems.SHELL,ModItems.SHELL_HATCHET, exporter);
+        TwoVerticalRecipeGenerator(Items.SAND,Items.SANDSTONE,ModItems.SAND_CUDGEL, exporter);
+
     }
 
 

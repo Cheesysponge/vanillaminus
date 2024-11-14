@@ -13,7 +13,9 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item SHELL = registerItem("shell", new Item(new FabricItemSettings().food(ModFoodComponents.ICKY)));
-    public static final Item SHELL_HATCHET = registerItem("shell_hatchet", new MultiTool(0,1,ToolMaterials.WOOD,new FabricItemSettings().food(ModFoodComponents.ICKY)));
+    public static final Item SHELL_HATCHET = registerItem("shell_hatchet", new MultiTool(1.5f,-1.5f,ModToolMaterials.SHELL,new FabricItemSettings().food(ModFoodComponents.ICKY)));
+    public static final Item SAND_CUDGEL = registerItem("sand_cudgel", new MultiTool(3,-2.2f,ModToolMaterials.SAND,new FabricItemSettings().food(ModFoodComponents.ICKY)));
+
 
 
     private static Item registerItem(String name, Item item) {

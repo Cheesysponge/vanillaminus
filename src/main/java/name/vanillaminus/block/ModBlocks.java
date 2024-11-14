@@ -1,8 +1,8 @@
 package name.vanillaminus.block;
 
+import name.vanillaminus.block.custom.ChunkBlock;
 import name.vanillaminus.block.custom.DirtClumpBlock;
 import name.vanillaminus.block.custom.DirtCrafterBlock;
-import name.vanillaminus.block.custom.IronChunkBlock;
 import name.vanillaminus.item.ModFoodComponents;
 import name.vanillaminus.vanillaMinus;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -29,7 +29,8 @@ public class ModBlocks {
     public static final Block DIRT_CLUMP = registerBlock("dirt_clump",
             new DirtClumpBlock(FabricBlockSettings.copyOf(Blocks.CYAN_CARPET).strength(0.25f).luminance(0).slipperiness(0.989f)));
     public static final Block IRON_CHUNK = registerBlock("iron_chunk",
-            new IronChunkBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(1f)));
+            new ChunkBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(1f)));
+    public static final Block SAND_CHUNK = registerBlock("sand_chunk",new ChunkBlock(FabricBlockSettings.copyOf(Blocks.SANDSTONE).strength(1f)));
 
     private static Item registerBlockItem(String name, Block block, String tooltipKey) {
         return Registry.register(Registries.ITEM, new Identifier(vanillaMinus.MOD_ID, name),

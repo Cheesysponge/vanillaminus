@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "vanillaminus:iron_chunk"
+    "vanillaminus:iron_chunk",
+    "vanillaminus:sand_chunk"
   ]
 }

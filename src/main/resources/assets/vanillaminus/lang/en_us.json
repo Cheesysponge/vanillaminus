@@ -3,10 +3,14 @@
   "block.vanillaminus.silt": "Silt",
   "block.vanillaminus.dirt_clump": "Dirt Clump",
   "block.vanillaminus.iron_chunk": "Iron Chunk",
+  "block.vanillaminus.sand_chunk": "Sand Chunk",
+
 
   "itemGroup.vanillaminus.vanilla_minus": "Vanilla Deconstructed",
   "item.vanillaminus.shell": "Sea Shell",
   "item.vanillaminus.shell_hatchet": "Shell Hatchet",
+  "item.vanillaminus.sand_cudgel": "Sand Cudgel",
+
 
 
   "item.minecraft.potion.effect.shell_potion": "Shell Potion",

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:sand"
+    },
+    "I": {
+      "item": "minecraft:sandstone"
+    }
+  },
+  "pattern": [
+    "I",
+    "#"
+  ],
+  "result": {
+    "item": "vanillaminus:sand_cudgel"
+  },
+  "show_notification": true
+}
