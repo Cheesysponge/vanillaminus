@@ -19,9 +19,11 @@ public class ModItemGroup {
                         entries.add(ModBlocks.DIRT_CRAFTER);
                         entries.add(ModBlocks.DIRT_CLUMP);
                         entries.add(ModBlocks.IRON_CHUNK);
+                        entries.add(ModBlocks.SAND_CHUNK);
                         entries.add(ModBlocks.SILT);
                         entries.add(ModItems.SHELL);
                         entries.add(ModItems.SHELL_HATCHET);
+                        entries.add(ModItems.SAND_CUDGEL);
                     }).build());
 
     public static void registerItemGroups() {

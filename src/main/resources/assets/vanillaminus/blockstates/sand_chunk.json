@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "vanillaminus:block/iron_chunk"
+      "model": "vanillaminus:block/sand_chunk"
     }
   }
 }
