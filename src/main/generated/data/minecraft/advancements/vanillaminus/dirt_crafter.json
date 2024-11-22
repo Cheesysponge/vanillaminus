@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:vanillaminus/dirt_clump",
+  "criteria": {
+    "dirt_crafter": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanillaminus:dirt_crafter"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "It'll take one iron and two planks and one of these to make something better"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "vanillaminus:dirt_crafter"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "A Crafting Table Made of DIRT??"
+    }
+  },
+  "requirements": [
+    [
+      "dirt_crafter"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

@@ -24,6 +24,10 @@ public class ModItemGroup {
                         entries.add(ModItems.SHELL);
                         entries.add(ModItems.SHELL_HATCHET);
                         entries.add(ModItems.SAND_CUDGEL);
+                        entries.add(ModItems.SAND_HELMET);
+                        entries.add(ModItems.SAND_CHESTPLATE);
+                        entries.add(ModItems.SAND_LEGGINGS);
+                        entries.add(ModItems.SAND_BOOTS);
                     }).build());
 
     public static void registerItemGroups() {

@@ -35,6 +35,9 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         TwoVerticalRecipeGenerator(Items.STICK,ModItems.SHELL,ModItems.SHELL_HATCHET, exporter);
         TwoVerticalRecipeGenerator(Items.SAND,Items.SANDSTONE,ModItems.SAND_CUDGEL, exporter);
 
+
+
+
     }
 
 
@@ -73,6 +76,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(First))
                 .offerTo(exporter, new Identifier("generated_" + FabricRecipeProvider.getRecipeName(Output)));
     }
+
 
 
 }

@@ -1,9 +1,9 @@
-// 1.20.1	2024-11-14T11:23:39.8011882	vanillaminus/Recipes
+// 1.20.1	2024-11-18T11:00:17.7609734	vanillaminus/Recipes
 d8698e45d2fe8ad505f19e107e8375dfad940ab5 data\vanillaminus\recipes\generated_craft_shell.json
 d4f22dfdfb8004f02c76de3bbdcd427ce3652882 data\vanillaminus\advancements\recipes\misc\generated_craft_iron_ingot.json
 f57ec4ad742c626255c3c99b1dcb1fd600ffb2ae data\vanillaminus\recipes\generated_shell_hatchet.json
-e99a47a825a01bfd22034503fea3e895ab2e4312 data\vanillaminus\advancements\recipes\misc\generated_craft_iron_chunk.json
 de3b178fb702264f58b43e87550af2e9bd89bb42 data\vanillaminus\advancements\recipes\misc\generated_craft_sand_chunk.json
+e99a47a825a01bfd22034503fea3e895ab2e4312 data\vanillaminus\advancements\recipes\misc\generated_craft_iron_chunk.json
 c049e9d52ecb6eea92d58736e10656c56d4ffa25 data\vanillaminus\advancements\recipes\misc\generated_craft_silt.json
 73969631d2f018fd308c23118193f1c1b0941038 data\vanillaminus\recipes\generated_sand_cudgel.json
 7490c60e8c015768b1fbc2e6179f6030236f4466 data\vanillaminus\advancements\recipes\misc\generated_craft_sandstone.json

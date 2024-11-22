@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "dirty": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:dirt"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "vanillaminus:textures/block/dirtcrafter_side.png",
+    "description": {
+      "text": "I wonder what this can make"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:dirt"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Time to get started"
+    }
+  },
+  "requirements": [
+    [
+      "dirty"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

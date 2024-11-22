@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:vanillaminus/root",
+  "criteria": {
+    "dirt_clump": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanillaminus:dirt_clump"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "I wonder what I can craft with this"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "vanillaminus:dirt_clump"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "A Clump of Dirt?"
+    }
+  },
+  "requirements": [
+    [
+      "dirt_clump"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}
