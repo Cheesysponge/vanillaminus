@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:vanillaminus/root",
+  "parent": "minecraft:vanillaminus/gravel",
   "criteria": {
-    "dirt_clump": {
+    "silt": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vanillaminus:dirt_clump"
+              "vanillaminus:silt"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "I wonder what I can craft with this"
+      "text": "I wonder what happens when I break this"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "vanillaminus:dirt_clump"
+      "item": "vanillaminus:silt"
     },
     "show_toast": true,
     "title": {
-      "text": "A Clump of Dirt?"
+      "text": "Silt?"
     }
   },
   "requirements": [
     [
-      "dirt_clump"
+      "silt"
     ]
   ],
   "rewards": {

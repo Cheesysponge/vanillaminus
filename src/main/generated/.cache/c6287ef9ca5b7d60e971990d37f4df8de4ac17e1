@@ -1,4 +1,7 @@
-// 1.20.1	2024-11-18T11:00:17.7569745	vanillaminus/Advancements
-508793a7ea632437f25449820a8c058040b22b10 data\minecraft\advancements\vanillaminus\root.json
-6b865f20cf9ff4ea66f8b2be6a7216a0e942adf1 data\minecraft\advancements\vanillaminus\dirt_crafter.json
-4c8d037e02585d1deaa4636d896bad0a01e57ba7 data\minecraft\advancements\vanillaminus\dirt_clump.json
+// 1.20.1	2024-11-21T20:57:31.6367387	vanillaminus/Advancements
+f3f8495e20e98fd35750e581dc380b9844a6fcd0 data\minecraft\advancements\vanillaminus\silt.json
+50b1f53029d60931860a60836d4446fe480d5712 data\minecraft\advancements\vanillaminus\gravel.json
+61979610739079465b81717e3302b0d07d3ea331 data\minecraft\advancements\vanillaminus\dirt_clump.json
+c4088f41c7632368e7c3e7f7d424d512f21bcbeb data\minecraft\advancements\vanillaminus\iron_chunk.json
+5b5c3d1e6ef38e1f853652d5fd494286df97e6a4 data\minecraft\advancements\vanillaminus\root.json
+91e801f842227ddbe8e80b132096a561782d2470 data\minecraft\advancements\vanillaminus\dirt_crafter.json

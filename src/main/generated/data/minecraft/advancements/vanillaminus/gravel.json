@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:vanillaminus/root",
   "criteria": {
-    "dirt_clump": {
+    "gravel": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vanillaminus:dirt_clump"
+              "minecraft:gravel"
             ]
           }
         ]
@@ -22,16 +22,16 @@
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "vanillaminus:dirt_clump"
+      "item": "minecraft:gravel"
     },
     "show_toast": true,
     "title": {
-      "text": "A Clump of Dirt?"
+      "text": "Gravel.."
     }
   },
   "requirements": [
     [
-      "dirt_clump"
+      "gravel"
     ]
   ],
   "rewards": {

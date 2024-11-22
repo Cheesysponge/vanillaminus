@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:vanillaminus/root",
+  "parent": "minecraft:vanillaminus/silt",
   "criteria": {
-    "dirt_clump": {
+    "iron_chunk": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vanillaminus:dirt_clump"
+              "vanillaminus:iron_chunk"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "I wonder what I can craft with this"
+      "text": "Maybe put three of these in a crafting table"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "vanillaminus:dirt_clump"
+      "item": "vanillaminus:iron_chunk"
     },
     "show_toast": true,
     "title": {
-      "text": "A Clump of Dirt?"
+      "text": "Chunky Iron"
     }
   },
   "requirements": [
     [
-      "dirt_clump"
+      "iron_chunk"
     ]
   ],
   "rewards": {
