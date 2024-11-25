@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:vanillaminus/nuggets",
+  "parent": "minecraft:vanillaminus/sandstone",
   "criteria": {
-    "iron_chunk": {
+    "sand_chunk": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vanillaminus:iron_chunk"
+              "vanillaminus:sand_chunk"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Maybe put three of these in a crafting table"
+      "text": "I wonder what I can craft with this"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "vanillaminus:iron_chunk"
+      "item": "vanillaminus:sand_chunk"
     },
     "show_toast": true,
     "title": {
-      "text": "Chunky Iron"
+      "text": "A Chunk of Sand"
     }
   },
   "requirements": [
     [
-      "iron_chunk"
+      "sand_chunk"
     ]
   ],
   "rewards": {

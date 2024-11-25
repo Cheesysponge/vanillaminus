@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:vanillaminus/nuggets",
+  "parent": "minecraft:vanillaminus/shell",
   "criteria": {
-    "iron_chunk": {
+    "shell_hatchet": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vanillaminus:iron_chunk"
+              "vanillaminus:shell_hatchet"
             ]
           }
         ]
@@ -17,21 +17,22 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Maybe put three of these in a crafting table"
+      "text": "I wonder what happens if I eat this"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "vanillaminus:iron_chunk"
+      "item": "vanillaminus:shell_hatchet",
+      "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "text": "Chunky Iron"
+      "text": "A Chunk of Sand"
     }
   },
   "requirements": [
     [
-      "iron_chunk"
+      "shell_hatchet"
     ]
   ],
   "rewards": {

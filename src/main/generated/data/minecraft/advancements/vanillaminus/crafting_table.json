@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:vanillaminus/nuggets",
+  "parent": "minecraft:vanillaminus/dirt_crafter",
   "criteria": {
-    "iron_chunk": {
+    "crafting_table": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vanillaminus:iron_chunk"
+              "minecraft:crafting_table"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Maybe put three of these in a crafting table"
+      "text": "Don't lose this"
     },
-    "frame": "task",
+    "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "vanillaminus:iron_chunk"
+      "item": "minecraft:crafting_table"
     },
     "show_toast": true,
     "title": {
-      "text": "Chunky Iron"
+      "text": "Crafting Table"
     }
   },
   "requirements": [
     [
-      "iron_chunk"
+      "crafting_table"
     ]
   ],
   "rewards": {

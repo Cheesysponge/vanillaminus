@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:vanillaminus/nuggets",
+  "parent": "minecraft:vanillaminus/sandstone",
   "criteria": {
-    "iron_chunk": {
+    "sand_cudgel": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vanillaminus:iron_chunk"
+              "vanillaminus:sand_cudgel"
             ]
           }
         ]
@@ -17,21 +17,22 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Maybe put three of these in a crafting table"
+      "text": "A sand and a sandstone"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "vanillaminus:iron_chunk"
+      "item": "vanillaminus:sand_cudgel",
+      "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "text": "Chunky Iron"
+      "text": "Make a tool made out of sand"
     }
   },
   "requirements": [
     [
-      "iron_chunk"
+      "sand_cudgel"
     ]
   ],
   "rewards": {

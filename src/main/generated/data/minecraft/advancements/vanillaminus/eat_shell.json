@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:vanillaminus/shell",
+  "criteria": {
+    "eat_shell": {
+      "conditions": {
+        "item": {
+          "items": [
+            "vanillaminus:shell"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "I wonder why you did this"
+    },
+    "frame": "goal",
+    "hidden": true,
+    "icon": {
+      "item": "vanillaminus:shell"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Eat a Shell"
+    }
+  },
+  "requirements": [
+    [
+      "eat_shell"
+    ]
+  ],
+  "rewards": {
+    "experience": 1
+  },
+  "sends_telemetry_event": true
+}

@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:vanillaminus/nuggets",
+  "parent": "minecraft:vanillaminus/silt",
   "criteria": {
-    "iron_chunk": {
+    "nuggets": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vanillaminus:iron_chunk"
+              "minecraft:iron_nugget"
             ]
           }
         ]
@@ -22,16 +22,16 @@
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "vanillaminus:iron_chunk"
+      "item": "minecraft:iron_nugget"
     },
     "show_toast": true,
     "title": {
-      "text": "Chunky Iron"
+      "text": "Iron Nuggies"
     }
   },
   "requirements": [
     [
-      "iron_chunk"
+      "nuggets"
     ]
   ],
   "rewards": {
